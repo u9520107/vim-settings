@@ -8,11 +8,10 @@ call vundle#begin()
 "let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Bundle 'jelera/vim-javascript-syntax'
+"Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'helino/vim-json'
 Bundle 'tpope/vim-markdown'
-"Bundle 'vim-scripts/JavaScript-Indent'
 
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Raimondi/delimitMate'
@@ -26,7 +25,6 @@ Bundle 'marijnh/tern_for_vim'
 Bundle 'scrooloose/syntastic'
 
 Bundle 'maksimr/vim-jsbeautify'
-Bundle 'einars/js-beautify'
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
@@ -39,13 +37,11 @@ Bundle 'kchmck/vim-coffee-script'
 
 Bundle 'othree/html5.vim'
 Bundle 'mattn/emmet-vim'
-"Bundle 'mxw/vim-jsx'
 
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
 
 
-"Bundle 'sjl/vitality.vim'
 
 "All of your Plugins must be added before the following line
 call vundle#end()
@@ -79,7 +75,7 @@ colorscheme distinguished
 "set autoindent smartindent
 set autoindent
 set smarttab
-set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+set tabstop=2 softtabstop=2 shiftwidth=4 expandtab
 
 set number
 set cursorline
@@ -131,6 +127,6 @@ set clipboard=unnamed
 "airline
 let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#fnamemod =  ':t'
-let g:airline#extensions#tabline#left_sep = ''
+"let g:airline#extensions#tabline#left_sep = ''
 "let g:airline#extensions#tabline#right_sep = '>'
-
+"let g:airline_powerline_fonts = 1
