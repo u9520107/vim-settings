@@ -57,11 +57,12 @@ filetype plugin indent on    "required
 "syntastic settings
 let g:syntastic_javascript_checkers=['jshint']
 "use jshint for javascript
-let g:syntastic_check_on_open=1	"run check when open file
+"let g:syntastic_check_on_open=1	"run check when open file
 let g:syntastic_check_on_wq=1 "run check when buffer is written to disk
 let g:syntastic_auto_loc_list=1   "auto open when error exists, close when errors are cleared
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_json_checkers=['jsonlint']
+"let g:syntastic_mode_map={'mode': 'passive'}
 
 
 
@@ -75,7 +76,7 @@ colorscheme distinguished
 "set autoindent smartindent
 set autoindent
 set smarttab
-set tabstop=2 softtabstop=2 shiftwidth=4 expandtab
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 set number
 set cursorline
@@ -107,14 +108,15 @@ set foldlevel=99
 
 " buffer
 set hidden
-nnoremap <F7> :tabp<CR>
-inoremap <F7> <Esc>:tabp<CR>
+nnoremap <F7> :bp<CR>
+inoremap <F7> <Esc>:bp<CR>
 
-nnoremap <F8> :tabn<CR>
-inoremap <F8> <Esc>:tabn<CR>
+nnoremap <F8> :bn<CR>
+inoremap <F8> <Esc>:bn<CR>
 
-nnoremap <F5> :e<CR>
-inoremap <F5> <Esc>:e<CR>
+"nnoremap <F5> :e<CR>
+"nnoremap <silent> <F5> :SyntasticCheck<CR> 
+"inoremap <silent> <F5> <Esc>:SyntasticCheck<CR>
 
 vmap <silent> <C-f> :call RangeJsBeautify()<cr>
 
